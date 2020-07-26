@@ -135,17 +135,19 @@ class XDiPhoneXXS11Pro9 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(78.0, 21.0),
-            child: Text(
-              '|',
-              style: TextStyle(
-                fontFamily: 'Roboto',
-                fontSize: 20,
-                color: const Color(0xffa5a6a6),
-                fontWeight: FontWeight.w300,
-              ),
-              textAlign: TextAlign.left,
-            ),
+            offset: Offset(78.0, 10),
+            child: TextField(
+              decoration: InputDecoration(
+                border: InputBorder.none,
+                hintText: 'Search',
+                ),
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontSize: 20,
+                  color: const Color(0xffa5a6a6),
+                  fontWeight: FontWeight.w300,
+                ),
+            )
           ),
           Transform.translate(
             offset: Offset(42.0, 452.0),

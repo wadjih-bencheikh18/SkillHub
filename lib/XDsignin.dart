@@ -129,125 +129,23 @@ class XDsignin extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, -1.0),
+            offset: Offset(0.0, 1),
             child: Stack(
               children: <Widget>[
                 Transform.translate(
-                  offset: Offset(112.0, 428.0),
-                  child: Text(
-                    '*',
+                  offset: Offset(130, 420),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: '********',
+                    ),
                     style: TextStyle(
                       fontFamily: 'Roboto',
                       fontSize: 40,
                       color: const Color(0x80000000),
                       fontWeight: FontWeight.w500,
                     ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(136.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(160.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(185.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(209.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(233.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(257.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(281.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(305.0, 428.0),
-                  child: Text(
-                    '*',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 40,
-                      color: const Color(0x80000000),
-                      fontWeight: FontWeight.w500,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
+                  )
                 ),
               ],
             ),
@@ -312,17 +210,19 @@ class XDsignin extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(151.0, 351.0),
-            child: Text(
-              'Email',
-              style: TextStyle(
-                fontFamily: 'Roboto',
-                fontSize: 30,
-                color: const Color(0x80000000),
-                fontWeight: FontWeight.w500,
-              ),
-              textAlign: TextAlign.left,
-            ),
+            offset: Offset(151.0, 335),
+            child: TextField(
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  hintText: 'Email',
+                ),
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontSize: 30,
+                  color: const Color(0x80000000),
+                  fontWeight: FontWeight.w500,
+                ),
+            )
           ),
           Transform.translate(
             offset: Offset(16.0, 14.25),
