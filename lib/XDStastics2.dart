@@ -172,16 +172,16 @@ class XDStastics2 extends StatelessWidget {
                             Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(0.0, 4.5),
+                                  offset: Offset(0.0, 6.5),
                                   child: Text(
                                     'UX/UI',
                                     style: TextStyle(
                                       fontFamily: 'Josefin Sans',
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: const Color(0xff000000),
-                                      letterSpacing: 1.3,
+                                      letterSpacing: 2,
                                       fontWeight: FontWeight.w700,
-                                      height: 1.1538461538461537,
+                                      height: 0.75,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
@@ -243,16 +243,16 @@ class XDStastics2 extends StatelessWidget {
                             Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(0.0, 4.5),
+                                  offset: Offset(0.0, 5.5),
                                   child: Text(
                                     'Adobe Illustrator',
                                     style: TextStyle(
                                       fontFamily: 'Josefin Sans',
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: const Color(0xff000000),
-                                      letterSpacing: 1.3,
+                                      letterSpacing: 2,
                                       fontWeight: FontWeight.w700,
-                                      height: 1.1538461538461537,
+                                      height: 0.75,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
@@ -324,16 +324,16 @@ class XDStastics2 extends StatelessWidget {
                             Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(0.0, 4.5),
+                                  offset: Offset(0.0, 5.5),
                                   child: Text(
                                     'Html',
                                     style: TextStyle(
                                       fontFamily: 'Josefin Sans',
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: const Color(0xff000000),
-                                      letterSpacing: 1.3,
+                                      letterSpacing: 2,
                                       fontWeight: FontWeight.w700,
-                                      height: 1.1538461538461537,
+                                      height: 0.75,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
@@ -395,16 +395,16 @@ class XDStastics2 extends StatelessWidget {
                             Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(0.0, 4.5),
+                                  offset: Offset(0.0, 6.5),
                                   child: Text(
                                     'React',
                                     style: TextStyle(
                                       fontFamily: 'Josefin Sans',
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: const Color(0xff000000),
-                                      letterSpacing: 1.3,
+                                      letterSpacing: 2,
                                       fontWeight: FontWeight.w700,
-                                      height: 1.1538461538461537,
+                                      height: 0.75,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
@@ -466,16 +466,16 @@ class XDStastics2 extends StatelessWidget {
                             Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(0.0, 4.5),
+                                  offset: Offset(0.0, 6.5),
                                   child: Text(
                                     'Bootstrap',
                                     style: TextStyle(
                                       fontFamily: 'Josefin Sans',
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: const Color(0xff000000),
-                                      letterSpacing: 1.3,
+                                      letterSpacing: 2,
                                       fontWeight: FontWeight.w700,
-                                      height: 1.1538461538461537,
+                                      height: 0.75,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
@@ -537,16 +537,16 @@ class XDStastics2 extends StatelessWidget {
                             Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(0.0, 4.5),
+                                  offset: Offset(0.0, 5.5),
                                   child: Text(
                                     'Node.js',
                                     style: TextStyle(
                                       fontFamily: 'Josefin Sans',
-                                      fontSize: 13,
+                                      fontSize: 20,
                                       color: const Color(0xff000000),
-                                      letterSpacing: 1.3,
+                                      letterSpacing: 2,
                                       fontWeight: FontWeight.w700,
-                                      height: 1.1538461538461537,
+                                      height: 0.75,
                                     ),
                                     textAlign: TextAlign.left,
                                   ),
@@ -722,6 +722,16 @@ class XDStastics2 extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
               textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(7.0, 14.0),
+            child: Container(
+              width: 51.0,
+              height: 41.0,
+              decoration: BoxDecoration(
+                color: const Color(0xff01445e),
+              ),
             ),
           ),
           Transform.translate(

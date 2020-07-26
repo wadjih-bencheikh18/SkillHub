@@ -303,30 +303,40 @@ class XDiPhoneXXS11Pro7 extends StatelessWidget {
                 children: <Widget>[
                   Transform.translate(
                     offset: Offset(74.0, 339.0),
-                    child: Container(
-                      width: 250.0,
-                      height: 50.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
-                        color: const Color(0xfff15d5c),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0xffffffff),
-                            offset: Offset(0, 0),
-                            blurRadius: 10,
-                          ),
-                        ],
+                    child: PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => XDeditprofile(),
+                        ),
+                      ],
+                      child: Container(
+                        width: 250.0,
+                        height: 50.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15.0),
+                          color: const Color(0xfff15d5c),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xffffffff),
+                              offset: Offset(0, 0),
+                              blurRadius: 10,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(-60.0, -1.0),
+                    offset: Offset(-66.0, -1.0),
                     child: Stack(
                       children: <Widget>[
                         Transform.translate(
                           offset: Offset(164.0, 350.0),
                           child: Text(
-                            'Edit Your Interest',
+                            'Edit Your Interests',
                             style: TextStyle(
                               fontFamily: 'Roboto',
                               fontSize: 25,
@@ -345,7 +355,7 @@ class XDiPhoneXXS11Pro7 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(65.0, 505.0),
+            offset: Offset(-11.0, 166.0),
             child: PageLink(
               links: [
                 PageLinkInfo(
@@ -354,35 +364,59 @@ class XDiPhoneXXS11Pro7 extends StatelessWidget {
                   pageBuilder: () => XDeditprofile(),
                 ),
               ],
-              child: Container(
-                width: 250.0,
-                height: 50.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15.0),
-                  color: const Color(0xff27b7c1),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xffffffff),
-                      offset: Offset(0, 0),
-                      blurRadius: 10,
+              child: Stack(
+                children: <Widget>[
+                  Transform.translate(
+                    offset: Offset(74.0, 339.0),
+                    child: PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => XDeditprofile(),
+                        ),
+                      ],
+                      child: Container(
+                        width: 250.0,
+                        height: 50.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15.0),
+                          color: const Color(0xff27b7c1),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xffffffff),
+                              offset: Offset(0, 0),
+                              blurRadius: 10,
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ],
-                ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(-47.0, -1.0),
+                    child: Stack(
+                      children: <Widget>[
+                        Transform.translate(
+                          offset: Offset(164.0, 350.0),
+                          child: Text(
+                            'Edit Your Skills',
+                            style: TextStyle(
+                              fontFamily: 'Roboto',
+                              fontSize: 25,
+                              color: const Color(0xffffffff),
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            textAlign: TextAlign.left,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(108.0, 515.0),
-            child: Text(
-              'Edit Your Skills',
-              style: TextStyle(
-                fontFamily: 'Roboto',
-                fontSize: 25,
-                color: const Color(0xffffffff),
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.w500,
-              ),
-              textAlign: TextAlign.left,
             ),
           ),
           Transform.translate(
