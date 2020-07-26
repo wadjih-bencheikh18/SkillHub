@@ -3,11 +3,16 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/specific_rect_clip.dart';
 import 'package:adobe_xd/page_link.dart';
 import './XDiPhoneXXS11Pro7.dart';
+import './XDiPhoneXXS11Pro8.dart';
 import './XDStastics.dart';
+import './XDprofile.dart';
+import './XDeditprofile.dart';
 
 class XDStasticsmenu extends StatelessWidget {
+  final VoidCallback profil;
   XDStasticsmenu({
     Key key,
+    this.profil,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -517,6 +522,16 @@ class XDStasticsmenu extends StatelessWidget {
             ),
           ),
           Transform.translate(
+            offset: Offset(7.0, 14.0),
+            child: Container(
+              width: 51.0,
+              height: 41.0,
+              decoration: BoxDecoration(
+                color: const Color(0xff7193a0),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(31.0, 95.0),
             child: PageLink(
               links: [
@@ -773,46 +788,105 @@ class XDStasticsmenu extends StatelessWidget {
             ),
           ),
           Transform.translate(
+            offset: Offset(0.0, 202.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => XDiPhoneXXS11Pro7(),
+                ),
+              ],
+              child: Container(
+                width: 275.0,
+                height: 73.0,
+                decoration: BoxDecoration(),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0.0, 298.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => XDStastics(),
+                ),
+              ],
+              child: Container(
+                width: 270.0,
+                height: 74.0,
+                decoration: BoxDecoration(),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(7.0, 392.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => XDprofile(),
+                ),
+              ],
+              child: Container(
+                width: 260.0,
+                height: 63.0,
+                decoration: BoxDecoration(),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(24.0, 467.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => XDeditprofile(),
+                ),
+              ],
+              child: Container(
+                width: 228.0,
+                height: 70.0,
+                decoration: BoxDecoration(),
+              ),
+            ),
+          ),
+          Transform.translate(
             offset: Offset(-17.0, -72.0),
             child: Stack(
               children: <Widget>[
                 Transform.translate(
                   offset: Offset(24.0, 186.0),
-                  child: Stack(
-                    children: <Widget>[
+                  child:
                       // Adobe XD layer: '2019-09-13' (shape)
                       Container(
-                        width: 46.0,
-                        height: 46.0,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: const AssetImage('assets/images/profil.jpg'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        width: 46.0,
-                        height: 46.0,
-                        decoration: BoxDecoration(
-                          borderRadius:
-                              BorderRadius.all(Radius.elliptical(23.0, 23.0)),
-                          color: const Color(0xffffffff),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(24.0, 186.0),
-                  child: Container(
                     width: 46.0,
                     height: 46.0,
                     decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.all(Radius.elliptical(23.0, 23.0)),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff97ced1)),
+                      borderRadius: BorderRadius.circular(23.0),
+                      image: DecorationImage(
+                        image: const AssetImage('assets/images/profil.jpg'),
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(24, 186),
+                  child: Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      width: 46.0,
+                      height: 46.0,
+                      child: GestureDetector(onTap: () => profil?.call()),
                     ),
                   ),
                 ),

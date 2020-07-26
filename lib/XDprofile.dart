@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
 import './XDmenu.dart';
 import './XDdesign.dart';
+import './XDiPhoneXXS11Pro9.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import './XDeditprofile.dart';
-import './XDiPhoneXXS11Pro9.dart';
 
 class XDprofile extends StatelessWidget {
   XDprofile({
@@ -133,61 +133,74 @@ class XDprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(18.0, -30.0),
+            offset: Offset(62.0, 244.0),
+            child: Container(
+              width: 50.0,
+              height: 50.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/in.png'),
+                  fit: BoxFit.cover,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0x80000000),
+                    offset: Offset(0, 0),
+                    blurRadius: 10,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(320.0, 8.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => XDiPhoneXXS11Pro9(),
+                ),
+              ],
+              child: Container(
+                width: 51.0,
+                height: 41.0,
+                decoration: BoxDecoration(
+                  color: const Color(0xff01445e),
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(263.0, 244.0),
+            child: Container(
+              width: 50.0,
+              height: 50.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/be.png'),
+                  fit: BoxFit.cover,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0x80000000),
+                    offset: Offset(0, 0),
+                    blurRadius: 10,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(162.0, 244.0),
             child: Stack(
               children: <Widget>[
                 Transform.translate(
-                  offset: Offset(44.0, 274.0),
-                  child: Container(
-                    width: 50.0,
-                    height: 50.0,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const AssetImage('assets/images/in.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x80000000),
-                          offset: Offset(0, 0),
-                          blurRadius: 10,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(245.0, 274.0),
-                  child: Container(
-                    width: 50.0,
-                    height: 50.0,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const AssetImage('assets/images/be.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x80000000),
-                          offset: Offset(0, 0),
-                          blurRadius: 10,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(144.0, 274.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Transform.translate(
-                        offset: Offset(0.0, 0.0),
-                        child: SvgPicture.string(
-                          _svg_qxw9by,
-                          allowDrawingOutsideViewBox: true,
-                        ),
-                      ),
-                    ],
+                  offset: Offset(0.0, 0.0),
+                  child: SvgPicture.string(
+                    _svg_qxw9by,
+                    allowDrawingOutsideViewBox: true,
                   ),
                 ),
               ],
@@ -243,61 +256,6 @@ class XDprofile extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
               textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(0.0, -30.0),
-            child: Stack(
-              children: <Widget>[
-                Transform.translate(
-                  offset: Offset(-717.0, -822.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Transform.translate(
-                        offset: Offset(741.0, 1008.0),
-                        child:
-                            // Adobe XD layer: '2019-09-13' (shape)
-                            Container(
-                          width: 70.0,
-                          height: 70.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image:
-                                  const AssetImage('assets/images/profil.jpg'),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(741.0, 1008.0),
-                        child: Container(
-                          width: 70.0,
-                          height: 70.0,
-                          decoration: BoxDecoration(
-                            borderRadius:
-                                BorderRadius.all(Radius.elliptical(35.0, 35.0)),
-                            color: const Color(0xffffffff),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(24.0, 186.0),
-                  child: Container(
-                    width: 70.0,
-                    height: 70.0,
-                    decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.all(Radius.elliptical(35.0, 35.0)),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff97ced1)),
-                    ),
-                  ),
-                ),
-              ],
             ),
           ),
           Transform.translate(
@@ -480,6 +438,22 @@ class XDprofile extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(24.0, 156.0),
+            child:
+                // Adobe XD layer: '2019-09-13' (shape)
+                Container(
+              width: 70.0,
+              height: 70.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(35.0),
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/profil.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ),
             ),
           ),
         ],

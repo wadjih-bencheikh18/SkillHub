@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
+import './XDStasticsmenu.dart';
 import './XDStastics2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:adobe_xd/specific_rect_clip.dart';
-import './XDStasticsmenu.dart';
 import './XDiPhoneXXS11Pro9.dart';
 
 class XDStastics extends StatelessWidget {
@@ -25,6 +24,36 @@ class XDStastics extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(98.0),
                 color: const Color(0xff01445e),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(324.0, 14.0),
+            child: Container(
+              width: 51.0,
+              height: 41.0,
+              decoration: BoxDecoration(
+                color: const Color(0xff01445e),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(7.0, 14.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => XDStasticsmenu(),
+                ),
+              ],
+              child: Container(
+                width: 51.0,
+                height: 41.0,
+                decoration: BoxDecoration(
+                  color: const Color(0xff01445e),
+                ),
               ),
             ),
           ),
@@ -185,118 +214,429 @@ class XDStastics extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(22.0, 527.0),
-            child: SpecificRectClip(
-              rect: Rect.fromLTWH(0, 0, 338.2196044921875, 343.8262939453125),
-              child: UnconstrainedBox(
-                alignment: Alignment.topLeft,
-                child: Container(
-                  width: 334,
-                  height: 298,
-                  child: GridView.count(
-                    primary: false,
-                    padding: EdgeInsets.all(0),
-                    mainAxisSpacing: 20,
-                    crossAxisSpacing: 25,
-                    crossAxisCount: 1,
-                    childAspectRatio: 10.1212,
-                    children: [
-                      {
-                        'text': '1',
-                      },
-                      {
-                        'text': '2',
-                      },
-                      {
-                        'text': '3',
-                      },
-                      {
-                        'text': '4',
-                      },
-                      {
-                        'text': '5',
-                      },
-                      {
-                        'text': '6',
-                      },
-                    ].map((map) {
-                      final text = map['text'];
-                      return Transform.translate(
-                        offset: Offset(-22.0, -512.0),
+            offset: Offset(0.0, 15.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-542.71, 237.8),
+                  child: Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(602.71, 282.2),
                         child: Stack(
                           children: <Widget>[
-                            Transform.translate(
-                              offset: Offset(-542.71, 237.8),
-                              child: Stack(
-                                children: <Widget>[
-                                  Transform.translate(
-                                    offset: Offset(602.71, 282.2),
-                                    child: Stack(
-                                      children: <Widget>[
-                                        Stack(
-                                          children: <Widget>[
-                                            Transform.translate(
-                                              offset: Offset(0.0, 4.5),
-                                              child: Text(
-                                                text,
-                                                style: TextStyle(
-                                                  fontFamily: 'Josefin Sans',
-                                                  fontSize: 13,
-                                                  color:
-                                                      const Color(0xff000000),
-                                                  letterSpacing: 1.3,
-                                                  fontWeight: FontWeight.w700,
-                                                  height: 1.1538461538461537,
-                                                ),
-                                                textAlign: TextAlign.left,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
+                            Stack(
+                              children: <Widget>[
+                                Transform.translate(
+                                  offset: Offset(0.0, 4.5),
+                                  child: Text(
+                                    'Flutter',
+                                    style: TextStyle(
+                                      fontFamily: 'Josefin Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff000000),
+                                      letterSpacing: 1.3,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1538461538461537,
                                     ),
+                                    textAlign: TextAlign.left,
                                   ),
-                                  Transform.translate(
-                                    offset: Offset(875.93, 278.53),
-                                    child: SizedBox(
-                                      width: 22.0,
-                                      child: Text(
-                                        text,
-                                        style: TextStyle(
-                                          fontFamily: 'Montserrat-Bold',
-                                          fontSize: 13,
-                                          color: const Color(0xff000000),
-                                          height: 1.6153846153846154,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Transform.translate(
-                              offset: Offset(19.0, 513.33),
-                              child: Text(
-                                text,
-                                style: TextStyle(
-                                  fontFamily: 'Josefin Sans',
-                                  fontSize: 33,
-                                  color: const Color(0xff000000),
-                                  letterSpacing: 3.3000000000000003,
-                                  fontWeight: FontWeight.w700,
-                                  height: 1.1515151515151516,
                                 ),
-                                textAlign: TextAlign.left,
-                              ),
+                              ],
                             ),
                           ],
                         ),
-                      );
-                    }).toList(),
+                      ),
+                      Transform.translate(
+                        offset: Offset(875.93, 278.53),
+                        child: SizedBox(
+                          width: 22.0,
+                          child: Text(
+                            '32',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Bold',
+                              fontSize: 13,
+                              color: const Color(0xff000000),
+                              height: 1.6153846153846154,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ),
+                Transform.translate(
+                  offset: Offset(19.0, 513.33),
+                  child: Text(
+                    '1',
+                    style: TextStyle(
+                      fontFamily: 'Josefin Sans',
+                      fontSize: 33,
+                      color: const Color(0xff000000),
+                      letterSpacing: 3.3000000000000003,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1515151515151516,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0.0, 68.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-542.71, 237.8),
+                  child: Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(602.71, 282.2),
+                        child: Stack(
+                          children: <Widget>[
+                            Stack(
+                              children: <Widget>[
+                                Transform.translate(
+                                  offset: Offset(0.0, 4.5),
+                                  child: Text(
+                                    'React',
+                                    style: TextStyle(
+                                      fontFamily: 'Josefin Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff000000),
+                                      letterSpacing: 1.3,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1538461538461537,
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Transform.translate(
+                        offset: Offset(876.93, 278.53),
+                        child: SizedBox(
+                          width: 20.0,
+                          child: Text(
+                            '10',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Bold',
+                              fontSize: 13,
+                              color: const Color(0xff000000),
+                              height: 1.6153846153846154,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(19.0, 513.33),
+                  child: Text(
+                    '2',
+                    style: TextStyle(
+                      fontFamily: 'Josefin Sans',
+                      fontSize: 33,
+                      color: const Color(0xff000000),
+                      letterSpacing: 3.3000000000000003,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1515151515151516,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0.0, 121.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-542.71, 237.8),
+                  child: Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(602.71, 282.2),
+                        child: Stack(
+                          children: <Widget>[
+                            Stack(
+                              children: <Widget>[
+                                Transform.translate(
+                                  offset: Offset(0.0, 4.5),
+                                  child: Text(
+                                    'UX/UI',
+                                    style: TextStyle(
+                                      fontFamily: 'Josefin Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff000000),
+                                      letterSpacing: 1.3,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1538461538461537,
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Transform.translate(
+                        offset: Offset(879.93, 278.53),
+                        child: SizedBox(
+                          width: 14.0,
+                          child: Text(
+                            '4',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Bold',
+                              fontSize: 13,
+                              color: const Color(0xff000000),
+                              height: 1.6153846153846154,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(19.0, 513.33),
+                  child: Text(
+                    '3',
+                    style: TextStyle(
+                      fontFamily: 'Josefin Sans',
+                      fontSize: 33,
+                      color: const Color(0xff000000),
+                      letterSpacing: 3.3000000000000003,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1515151515151516,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0.0, 174.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-542.71, 237.8),
+                  child: Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(602.71, 282.2),
+                        child: Stack(
+                          children: <Widget>[
+                            Stack(
+                              children: <Widget>[
+                                Transform.translate(
+                                  offset: Offset(0.0, 4.5),
+                                  child: Text(
+                                    'Graphic design',
+                                    style: TextStyle(
+                                      fontFamily: 'Josefin Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff000000),
+                                      letterSpacing: 1.3,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1538461538461537,
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Transform.translate(
+                        offset: Offset(879.93, 278.53),
+                        child: SizedBox(
+                          width: 14.0,
+                          child: Text(
+                            '2',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Bold',
+                              fontSize: 13,
+                              color: const Color(0xff000000),
+                              height: 1.6153846153846154,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(18.0, 513.33),
+                  child: Text(
+                    '4',
+                    style: TextStyle(
+                      fontFamily: 'Josefin Sans',
+                      fontSize: 33,
+                      color: const Color(0xff000000),
+                      letterSpacing: 3.3000000000000003,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1515151515151516,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0.0, 227.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-542.71, 237.8),
+                  child: Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(602.71, 282.2),
+                        child: Stack(
+                          children: <Widget>[
+                            Stack(
+                              children: <Widget>[
+                                Transform.translate(
+                                  offset: Offset(0.0, 4.5),
+                                  child: Text(
+                                    'Django',
+                                    style: TextStyle(
+                                      fontFamily: 'Josefin Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff000000),
+                                      letterSpacing: 1.3,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1538461538461537,
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Transform.translate(
+                        offset: Offset(880.93, 278.53),
+                        child: SizedBox(
+                          width: 12.0,
+                          child: Text(
+                            '1',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Bold',
+                              fontSize: 13,
+                              color: const Color(0xff000000),
+                              height: 1.6153846153846154,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(19.0, 513.33),
+                  child: Text(
+                    '5',
+                    style: TextStyle(
+                      fontFamily: 'Josefin Sans',
+                      fontSize: 33,
+                      color: const Color(0xff000000),
+                      letterSpacing: 3.3000000000000003,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1515151515151516,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0.0, 280.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-542.71, 237.8),
+                  child: Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(602.71, 282.2),
+                        child: Stack(
+                          children: <Widget>[
+                            Stack(
+                              children: <Widget>[
+                                Transform.translate(
+                                  offset: Offset(0.0, 4.5),
+                                  child: Text(
+                                    'Adobe After Effect',
+                                    style: TextStyle(
+                                      fontFamily: 'Josefin Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff000000),
+                                      letterSpacing: 1.3,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.1538461538461537,
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Transform.translate(
+                        offset: Offset(880.93, 278.53),
+                        child: SizedBox(
+                          width: 12.0,
+                          child: Text(
+                            '1',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat-Bold',
+                              fontSize: 13,
+                              color: const Color(0xff000000),
+                              height: 1.6153846153846154,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(19.0, 513.33),
+                  child: Text(
+                    '6',
+                    style: TextStyle(
+                      fontFamily: 'Josefin Sans',
+                      fontSize: 33,
+                      color: const Color(0xff000000),
+                      letterSpacing: 3.3000000000000003,
+                      fontWeight: FontWeight.w700,
+                      height: 1.1515151515151516,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
             ),
           ),
           Transform(
@@ -313,26 +653,21 @@ class XDStastics extends StatelessWidget {
                 0.0,
                 1.0,
                 0.0,
-                168.31,
-                254.69,
+                179.31,
+                248.69,
                 0.0,
                 1.0),
-            child: SizedBox(
-              width: 136.0,
-              height: 18.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Development',
-                style: TextStyle(
-                  fontFamily: 'Josefin Sans',
-                  fontSize: 18,
-                  color: const Color(0xff000000),
-                  letterSpacing: 1.8,
-                  fontWeight: FontWeight.w700,
-                  height: 2.111111111111111,
-                ),
-                textAlign: TextAlign.left,
-              )),
+            child: Text(
+              'Development',
+              style: TextStyle(
+                fontFamily: 'Josefin Sans',
+                fontSize: 18,
+                color: const Color(0xff000000),
+                letterSpacing: 1.8,
+                fontWeight: FontWeight.w700,
+                height: 2.111111111111111,
+              ),
+              textAlign: TextAlign.left,
             ),
           ),
           Transform(
@@ -353,21 +688,17 @@ class XDStastics extends StatelessWidget {
                 284.44,
                 0.0,
                 1.0),
-            child: SizedBox(
-              width: 84.0,
-              height: 30.0,
-              child: Text(
-                'Design',
-                style: TextStyle(
-                  fontFamily: 'Josefin Sans',
-                  fontSize: 18,
-                  color: const Color(0xff000000),
-                  letterSpacing: 1.8,
-                  fontWeight: FontWeight.w700,
-                  height: 2.111111111111111,
-                ),
-                textAlign: TextAlign.left,
+            child: Text(
+              'Design',
+              style: TextStyle(
+                fontFamily: 'Josefin Sans',
+                fontSize: 18,
+                color: const Color(0xff000000),
+                letterSpacing: 1.8,
+                fontWeight: FontWeight.w700,
+                height: 2.111111111111111,
               ),
+              textAlign: TextAlign.left,
             ),
           ),
           Transform.translate(
