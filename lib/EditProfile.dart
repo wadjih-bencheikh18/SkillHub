@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './XDdesign.dart';
+import './Design.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
 import './Profile.dart';
