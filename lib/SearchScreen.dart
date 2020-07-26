@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDiPhoneXXS11Pro7.dart';
-import './XDdesign.dart';
+import './Home.dart';
+import './Design.dart';
 
 class XDiPhoneXXS11Pro9 extends StatelessWidget {
   XDiPhoneXXS11Pro9({

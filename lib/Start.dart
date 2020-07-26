@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDsignin.dart';
+import './SignIn.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDstart extends StatelessWidget {

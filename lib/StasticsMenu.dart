@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/specific_rect_clip.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDiPhoneXXS11Pro7.dart';
-import './XDiPhoneXXS11Pro8.dart';
-import './XDStastics.dart';
-import './XDprofile.dart';
-import './XDeditprofile.dart';
+import './Home.dart';
+import './NavMenu.dart';
+import './Stastics.dart';
+import './Profile.dart';
+import './EditProfile.dart';
 
 class XDStasticsmenu extends StatelessWidget {
   final VoidCallback profil;
