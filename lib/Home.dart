@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDiPhoneXXS11Pro8.dart';
+import './NavMenu.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import './XDiPhoneXXS11Pro9.dart';
-import './XDeditprofile.dart';
+import './SearchScreen.dart';
+import './EditProfile.dart';
 
 class XDiPhoneXXS11Pro7 extends StatelessWidget {
   XDiPhoneXXS11Pro7({

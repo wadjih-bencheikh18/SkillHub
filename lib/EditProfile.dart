@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './XDdesign.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDprofile.dart';
+import './Profile.dart';
 
 class XDeditprofile extends StatelessWidget {
   XDeditprofile({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDiPhoneXXS11Pro7.dart';
+import './Home.dart';
 
 class XDsignin extends StatelessWidget {
   XDsignin({

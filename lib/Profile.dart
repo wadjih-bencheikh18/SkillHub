@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/page_link.dart';
-import './XDmenu.dart';
-import './XDdesign.dart';
-import './XDiPhoneXXS11Pro9.dart';
+import './Menu.dart';
+import './Design.dart';
+import './SearchScreen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import './XDeditprofile.dart';
+import './EditProfile.dart';
 
 class XDprofile extends StatelessWidget {
   XDprofile({
