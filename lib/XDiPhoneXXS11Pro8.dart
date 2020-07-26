@@ -424,9 +424,26 @@ class XDiPhoneXXS11Pro8 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Transform.translate(
+                    offset: Offset(1843.5, -551.41),
+                    child: PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => XDiPhoneXXS11Pro7(),
+                        ),
+                      ],
+                      child: SvgPicture.string(
+                        _svg_pstwiw,
+                        allowDrawingOutsideViewBox: true,
+                      ),
+                    ),
+                  ),
+                  Transform.translate(
                     offset: Offset(1843.5, -563.5),
                     child: SvgPicture.string(
-                      _svg_5mytz6,
+                      _svg_evvbu3,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
@@ -474,34 +491,23 @@ class XDiPhoneXXS11Pro8 extends StatelessWidget {
                         height: 46.0,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: const AssetImage(''),
+                            image: const AssetImage('assets/images/profil.jpg'),
                             fit: BoxFit.fill,
                           ),
                         ),
                       ),
-                      Container(
-                        width: 46.0,
-                        height: 46.0,
-                        decoration: BoxDecoration(
-                          borderRadius:
-                              BorderRadius.all(Radius.elliptical(23.0, 23.0)),
-                          color: const Color(0xffffffff),
-                        ),
+                      SvgPicture.string(
+                        _svg_2wk1hj,
+                        allowDrawingOutsideViewBox: true,
                       ),
                     ],
                   ),
                 ),
                 Transform.translate(
                   offset: Offset(24.0, 186.0),
-                  child: Container(
-                    width: 46.0,
-                    height: 46.0,
-                    decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.all(Radius.elliptical(23.0, 23.0)),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff97ced1)),
-                    ),
+                  child: SvgPicture.string(
+                    _svg_td13lc,
+                    allowDrawingOutsideViewBox: true,
                   ),
                 ),
               ],
@@ -628,5 +634,11 @@ const String _svg_61qo8x =
     '<svg viewBox="1199.5 70.6 29.9 19.9" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 70.58)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 80.54)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 90.5)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
 const String _svg_s211ft =
     '<svg viewBox="1394.9 290.5 9.4 9.4" ><defs><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="6"/></filter></defs><path transform="translate(1394.89, 290.54)" d="M 0 0 L 9.418819427490234 9.418819427490234" fill="none" stroke="#a7a7a7" stroke-width="1" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
-const String _svg_5mytz6 =
-    '<svg viewBox="1843.5 -563.5 24.3 24.2" ><path transform="translate(1843.5, -551.41)" d="M 24.25400161743164 0 L 0 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="4" stroke-linecap="round" /><path transform="translate(1843.5, -551.41)" d="M 12.16574573516846 12.0882568359375 L 0 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="4" stroke-linecap="round" /><path transform="translate(1843.5, -563.5)" d="M 12.16574573516846 0 L 0 12.0882568359375" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
+const String _svg_pstwiw =
+    '<svg viewBox="1843.5 -551.4 24.3 1.0" ><path transform="translate(1843.5, -551.41)" d="M 24.25400161743164 0 L 0 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
+const String _svg_evvbu3 =
+    '<svg viewBox="1843.5 -563.5 12.2 24.2" ><path transform="translate(1843.5, -551.41)" d="M 12.16574573516846 12.0882568359375 L 0 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="4" stroke-linecap="round" /><path transform="translate(1843.5, -563.5)" d="M 12.16574573516846 0 L 0 12.0882568359375" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
+const String _svg_2wk1hj =
+    '<svg viewBox="0.0 0.0 46.0 46.0" ><path  d="M 23 0 C 35.70254898071289 0 46 10.29745101928711 46 23 C 46 35.70254898071289 35.70254898071289 46 23 46 C 10.29745101928711 46 0 35.70254898071289 0 23 C 0 10.29745101928711 10.29745101928711 0 23 0 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_td13lc =
+    '<svg viewBox="24.0 186.0 46.0 46.0" ><path transform="translate(24.0, 186.0)" d="M 23 0 C 35.70254898071289 0 46 10.29745101928711 46 23 C 46 35.70254898071289 35.70254898071289 46 23 46 C 10.29745101928711 46 0 35.70254898071289 0 23 C 0 10.29745101928711 10.29745101928711 0 23 0 Z" fill="none" stroke="#97ced1" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';

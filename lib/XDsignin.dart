@@ -107,7 +107,7 @@ class XDsignin extends StatelessWidget {
               height: 50.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/mail.png'),
                   fit: BoxFit.cover,
                 ),
                 border: Border.all(width: 1.0, color: const Color(0x00000000)),
@@ -121,7 +121,7 @@ class XDsignin extends StatelessWidget {
               height: 40.0,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/key.png'),
                   fit: BoxFit.cover,
                 ),
                 border: Border.all(width: 1.0, color: const Color(0x00000000)),
@@ -254,18 +254,19 @@ class XDsignin extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(21.0, -4.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => XDiPhoneXXS11Pro7(),
-                ),
-              ],
-              child: Stack(
-                children: <Widget>[
-                  Transform.translate(
-                    offset: Offset(67.0, 550.0),
+            child: Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(67.0, 550.0),
+                  child: PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => XDiPhoneXXS11Pro7(),
+                      ),
+                    ],
                     child: Container(
                       width: 200.0,
                       height: 50.0,
@@ -282,8 +283,18 @@ class XDsignin extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Transform.translate(
-                    offset: Offset(129.86, 560.0),
+                ),
+                Transform.translate(
+                  offset: Offset(129.86, 560.0),
+                  child: PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => XDiPhoneXXS11Pro7(),
+                      ),
+                    ],
                     child: Text(
                       'Sign In',
                       style: TextStyle(
@@ -296,8 +307,8 @@ class XDsignin extends StatelessWidget {
                       textAlign: TextAlign.left,
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Transform.translate(
@@ -327,13 +338,9 @@ class XDsignin extends StatelessWidget {
                     children: <Widget>[
                       Transform.translate(
                         offset: Offset(0.0, 7.19),
-                        child: Container(
-                          width: 97.6,
-                          height: 36.1,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5.63),
-                            color: const Color(0xff0b39ce),
-                          ),
+                        child: SvgPicture.string(
+                          _svg_r1sc9g,
+                          allowDrawingOutsideViewBox: true,
                         ),
                       ),
                       Transform.translate(
@@ -376,3 +383,5 @@ class XDsignin extends StatelessWidget {
 
 const String _svg_plzfno =
     '<svg viewBox="41.5 245.5 206.0 1.0" ><path transform="translate(41.5, 245.5)" d="M 0 0 L 206 0" fill="none" stroke="#ffffff" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" /></svg>';
+const String _svg_r1sc9g =
+    '<svg viewBox="0.0 7.2 97.6 36.1" ><path transform="translate(0.0, 7.19)" d="M 5.630000114440918 0 L 91.97643280029297 0 C 95.08579254150391 0 97.60643005371094 2.520636796951294 97.60643005371094 5.630000114440918 L 97.60643005371094 30.42282485961914 C 97.60643005371094 33.53218841552734 95.08579254150391 36.05282592773438 91.97643280029297 36.05282592773438 L 5.630000114440918 36.05282592773438 C 2.520636796951294 36.05282592773438 0 33.53218841552734 0 30.42282485961914 L 0 5.630000114440918 C 0 2.520636796951294 2.520636796951294 0 5.630000114440918 0 Z" fill="#0b39ce" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';

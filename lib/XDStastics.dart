@@ -424,7 +424,31 @@ class XDStastics extends StatelessWidget {
                   Transform.translate(
                     offset: Offset(1199.5, 70.58),
                     child: SvgPicture.string(
-                      _svg_61qo8x,
+                      _svg_ite12c,
+                      allowDrawingOutsideViewBox: true,
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(1199.5, 80.54),
+                    child: PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => XDStasticsmenu(),
+                        ),
+                      ],
+                      child: SvgPicture.string(
+                        _svg_u30m09,
+                        allowDrawingOutsideViewBox: true,
+                      ),
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(1199.5, 90.5),
+                    child: SvgPicture.string(
+                      _svg_qiqnr1,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
@@ -542,7 +566,11 @@ const String _svg_kglit8 =
     '<svg viewBox="0.0 0.0 205.0 173.6" ><path transform="translate(-35.54, -280.18)" d="M 51.45613861083984 308.7770080566406 C 41.5274772644043 322.8195495605469 35.62621307373047 339.9042053222656 35.54299926757813 358.3934631347656 L 120.1911239624023 358.3934631347656 L 51.45613861083984 308.7770080566406 Z" fill="#f3bf5d" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /><path transform="translate(27.36, -238.75)" d="M 90.84614562988281 326.5679626464844 L 62.5579948425293 407.5282592773438 C 71.43486022949219 410.5870971679688 80.91416931152344 412.3311767578125 90.82952880859375 412.3311767578125 C 123.9139099121094 412.3311767578125 152.6646881103516 393.8052978515625 167.3064117431641 366.5688781738281 L 90.84614562988281 326.5679626464844 Z" fill="#dee6ee" stroke="#ffffff" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /><path transform="translate(-7.73, -238.56)" d="M 124.6062698364258 326.6500244140625 L 47.48699951171875 362.3138427734375 C 57.24257659912109 382.9767456054688 74.8731689453125 399.1228637695313 96.54779052734375 406.9346313476563 L 124.6062698364258 326.6500244140625 Z" fill="#dee6ee" stroke="#ffffff" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /><path transform="translate(-13.55, -238.93)" d="M 128.7717590332031 326.4929504394531 L 44.98900604248047 326.4929504394531 C 45.1021614074707 339.0278015136719 47.90468597412109 350.8969421386719 52.79412078857422 361.6278076171875 L 128.7717590332031 326.4929504394531 Z" fill="#dee6ee" stroke="#ffffff" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /><path transform="translate(-1.94, -300.19)" d="M 120.1255874633789 386.6637268066406 L 197.1083679199219 426.9441223144531 C 203.3391723632813 414.9752502441406 206.9138488769531 401.4018859863281 206.9138488769531 386.9733276367188 C 206.9138488769531 339.0440979003906 168.0546875 300.1850280761719 120.1255874633789 300.1850280761719 C 91.25493621826172 300.1850280761719 65.75598907470703 314.3373718261719 49.97599792480469 336.0185852050781 L 120.1255874633789 386.6637268066406 Z" fill="#27b7c1" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
 const String _svg_vxkcdj =
     '<svg viewBox="205.4 316.6 27.6 223.6" ><path transform="translate(205.4, 523.93)" d="M 0 0 L 10.5057954788208 16.23066139221191" fill="none" fill-opacity="0.4" stroke="#999da3" stroke-width="0.25" stroke-opacity="0.4" stroke-miterlimit="10" stroke-linecap="butt" /><path transform="translate(220.02, 316.55)" d="M 12.99378108978271 0 L 0 14.31649303436279" fill="none" fill-opacity="0.4" stroke="#999da3" stroke-width="0.25" stroke-opacity="0.4" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
-const String _svg_61qo8x =
-    '<svg viewBox="1199.5 70.6 29.9 19.9" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 70.58)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 80.54)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 90.5)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
+const String _svg_ite12c =
+    '<svg viewBox="1199.5 70.6 29.9 1.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 70.58)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
+const String _svg_u30m09 =
+    '<svg viewBox="1199.5 80.5 29.9 1.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 80.54)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
+const String _svg_qiqnr1 =
+    '<svg viewBox="1199.5 90.5 29.9 1.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 90.5)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
 const String _svg_ojui99 =
     '<svg viewBox="1394.9 290.5 9.4 9.4" ><defs><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="6"/></filter></defs><path transform="translate(1394.89, 290.54)" d="M 0 0 L 9.418819427490234 9.418819427490234" fill="none" stroke="#eae6e6" stroke-width="1" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';

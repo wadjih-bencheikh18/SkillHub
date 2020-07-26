@@ -41,7 +41,31 @@ class XDiPhoneXXS11Pro9 extends StatelessWidget {
                   Transform.translate(
                     offset: Offset(1199.5, 70.58),
                     child: SvgPicture.string(
-                      _svg_61qo8x,
+                      _svg_ite12c,
+                      allowDrawingOutsideViewBox: true,
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(1199.5, 80.54),
+                    child: PageLink(
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.Fade,
+                          ease: Curves.easeOut,
+                          duration: 0.3,
+                          pageBuilder: () => XDiPhoneXXS11Pro7(),
+                        ),
+                      ],
+                      child: SvgPicture.string(
+                        _svg_u30m09,
+                        allowDrawingOutsideViewBox: true,
+                      ),
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(1199.5, 90.5),
+                    child: SvgPicture.string(
+                      _svg_qiqnr1,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
@@ -73,20 +97,31 @@ class XDiPhoneXXS11Pro9 extends StatelessWidget {
             offset: Offset(319.5, 20.0),
             child: Stack(
               children: <Widget>[
-                Container(
-                  width: 17.0,
-                  height: 17.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.elliptical(8.5, 8.5)),
-                    border:
-                        Border.all(width: 1.0, color: const Color(0xffa7a7a7)),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0x4d27b7c1),
-                        offset: Offset(0, 3),
-                        blurRadius: 6,
-                      ),
-                    ],
+                PageLink(
+                  links: [
+                    PageLinkInfo(
+                      transition: LinkTransition.Fade,
+                      ease: Curves.easeOut,
+                      duration: 0.3,
+                      pageBuilder: () => XDiPhoneXXS11Pro7(),
+                    ),
+                  ],
+                  child: Container(
+                    width: 17.0,
+                    height: 17.0,
+                    decoration: BoxDecoration(
+                      borderRadius:
+                          BorderRadius.all(Radius.elliptical(8.5, 8.5)),
+                      border: Border.all(
+                          width: 1.0, color: const Color(0xffa7a7a7)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0x4d27b7c1),
+                          offset: Offset(0, 3),
+                          blurRadius: 6,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Transform.translate(
@@ -339,7 +374,11 @@ class XDiPhoneXXS11Pro9 extends StatelessWidget {
   }
 }
 
-const String _svg_61qo8x =
-    '<svg viewBox="1199.5 70.6 29.9 19.9" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 70.58)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 80.54)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 90.5)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
+const String _svg_ite12c =
+    '<svg viewBox="1199.5 70.6 29.9 1.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 70.58)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
+const String _svg_u30m09 =
+    '<svg viewBox="1199.5 80.5 29.9 1.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 80.54)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
+const String _svg_qiqnr1 =
+    '<svg viewBox="1199.5 90.5 29.9 1.0" ><defs><filter id="shadow"><feDropShadow dx="0" dy="0" stdDeviation="6"/></filter></defs><path transform="translate(1199.5, 90.5)" d="M 0 0 L 29.87873840332031 0" fill="none" stroke="#e9e5e5" stroke-width="5" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
 const String _svg_ofwnrq =
     '<svg viewBox="13.9 15.3 9.4 9.4" ><defs><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="6"/></filter></defs><path transform="translate(13.89, 15.26)" d="M 0 0 L 9.418819427490234 9.418819427490234" fill="none" stroke="#a7a7a7" stroke-width="1" stroke-miterlimit="4" stroke-linecap="round" filter="url(#shadow)"/></svg>';
